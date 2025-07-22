@@ -1,0 +1,81 @@
+body {
+    background-color: #303030;
+    color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.dashboard {
+    max-width: 800px;
+    min-width: 400px;
+    margin: 0 auto;
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.6),
+        0 6px 12px rgba(0, 0, 0, 0.5),
+        0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+#weather {
+    width: 100%;
+    text-align: center;
+    min-height: 300px;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: rgb(147, 147, 147);
+    border-radius: 10px;
+    background-color: #2a2a2a;
+    box-shadow:
+        inset 4px 4px 8px rgba(0, 0, 0, 0.6),
+        inset -4px -4px 8px rgba(255, 255, 255, 0.05);
+}
+
+#city {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+#city-input,
+#city-btn {
+    height: 48px;
+    line-height: 1;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    color: rgb(147, 147, 147);
+    border-radius: 10px;
+    border: none;
+    background-color: #2a2a2a;
+}
+
+#city-input {
+    flex: 1;
+    text-align: center;
+    overflow-x: auto;
+    box-shadow:
+        inset 4px 4px 8px rgba(0, 0, 0, 0.6),
+        inset -4px -4px 8px rgba(255, 255, 255, 0.05);
+}
+
+#city-btn {
+    flex-shrink: 0;
+    box-shadow:
+        inset -4px -4px 8px rgba(0, 0, 0, 0.6),
+        inset 4px 4px 8px  rgba(255, 255, 255, 0.05); 
+}
+
+#city-btn:active {
+    box-shadow:
+        inset 4px 4px 8px rgba(0, 0, 0, 0.6),
+        inset -4px -4px 8px rgba(255, 255, 255, 0.05);
+}
+
+input:focus {
+    outline: none;
+}
